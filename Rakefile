@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-MaddysSite::Application.load_tasks
+Maddysmusic::Application.load_tasks
