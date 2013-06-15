@@ -4,7 +4,7 @@ Maddysmusic::Application.routes.draw do
   get 'My_Philosophy' => 'pages#My_Philosophy'
   get 'Contact_Me' => 'pages#Contact_Me'
   get 'Resources' => 'pages#Resources'
-  
+ 
   root :to => 'pages#home'
 
 
