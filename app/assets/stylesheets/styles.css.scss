@@ -46,6 +46,18 @@ li {
  color: rgb(70,7,200);
 } 
 
+#logo{
+  border: thick solid;
+  border-color: rgba(70,7,200,.7);
+  border-radius: 20px;
+
+}
+
+.well{ h1 {  
+  text-align: center;
+  color: rgb(70,7,200)
+  }}
+
 .hero-unit {
    padding: 50px;
   margin-bottom: 10px;  
@@ -59,9 +71,7 @@ li {
   font-color: purple;
   }
 
-h1 {
-    font-color: rgb(70,7,200);
-  }
+
 
 h3 {
  color: rgb(70,7,200);
