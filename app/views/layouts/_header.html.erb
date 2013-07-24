@@ -15,12 +15,13 @@
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
        	<ul class ="nav"> 
-	    
-			<li><%= link_to "About Me", :action => 'About_Me' %></li>
-			<li><%= link_to "My Philosophy", :action => 'My_Philosophy' %></li>
-			<li><%= link_to "Contact Me", :action => 'Contact_Me' %></li>
-      <li><%= link_to "Resources", :action => 'Resources' %></li>
-       	</ul>
+	  
+			<li><%= link_to "About Me", { :controller => '/pages', :action => 'About_Me'}  %></li>
+			<li><%= link_to "My Philosophy", { :controller => '/pages', :action => 'My_Philosophy'} %></li>
+			<li><%= link_to "Contact Me", { :controller => '/pages', :action => 'Contact_Me'} %></li>
+      <li><%= link_to "Resources", { :controller => '/pages',  :action => 'Resources'} %></li>
+       
+        </ul>
       </div>
  
     </div>	
