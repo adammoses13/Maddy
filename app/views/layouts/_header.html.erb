@@ -15,13 +15,31 @@
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
        	<ul class ="nav"> 
-	  
-			<li><%= link_to "About Me", { :controller => '/pages', :action => 'About_Me'}  %></li>
-			<li><%= link_to "My Philosophy", { :controller => '/pages', :action => 'My_Philosophy'} %></li>
-			<li><%= link_to "Contact Me", { :controller => '/pages', :action => 'Contact_Me'} %></li>
-      <li><%= link_to "Resources", { :controller => '/pages',  :action => 'Resources'} %></li>
-       
+	   			<li><%= link_to "About Me", { :controller => '/pages', :action => 'About_Me'}  %></li>
+    			<li><%= link_to "My Philosophy", { :controller => '/pages', :action => 'My_Philosophy'} %></li>
+    			<li><%= link_to "Contact Me", { :controller => '/pages', :action => 'Contact_Me'} %></li>
+          <li><%= link_to "Resources", { :controller => '/pages',  :action => 'Resources'} %></li>
+
+          <% if user_signed_in? %>
+          <li><%= link_to "Student's Area", { :controller => '/pages',  :action => 'For_Students'} %></li>
+          <% end %>
         </ul>
+        <ul class="nav pull-right nav-pills">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Students
+              <b class="caret"></b>
+             </a>
+             <ul class="dropdown-menu">
+              <% if user_signed_in? %>
+                <li><%= link_to "Change Password", edit_user_registration_path %></li>
+                <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+              <% else %>
+                <li><%= link_to "Login", new_user_session_path %></li>
+              <% end %>
+            </ul>
+          </li>
+        </ul> 
       </div>
  
     </div>	

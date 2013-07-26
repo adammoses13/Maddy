@@ -1,0 +1,85 @@
+<div id="logo" class="well well-small">
+	<h2>
+		<%= image_tag("LOGO.jpg") %>
+	</h2>
+</div>
+
+<% if user_signed_in? %>
+	<div class="well">
+		<h1>Student's Area</h1>
+		<div class="accordion" id="accordion2">
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		       <h3> Student 1 </h3>
+		      </a>
+		    </div>
+		    <div id="collapseOne" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+											<li></li>
+											<li></li>
+		        </ul>
+		      </div>
+		    </div>
+			</div>
+
+			<div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		       <h3> Student 2 </h3>
+		      </a>
+		    </div>
+		    <div id="collapseTwo" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+											<li></li>
+											<li></li>
+		        </ul>
+		      </div>
+		    </div>
+			</div>
+
+			<div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+		       <h3> Student 3 </h3>
+		      </a>
+		    </div>
+		    <div id="collapseThree" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+		        	<li></li>
+		        </ul>
+		      </div>
+		    </div>
+			</div>
+
+			<div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+		       <h3> Student 4</h3>
+		      </a>
+		    </div>
+		    <div id="collapseFour" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+		        	<li></li>
+		        	<li></li>
+		        	<li></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+
+		  </div>
+		</div>
+		</div>
+	</div>
+<% else %>
+	<p>Please Login to view Student's Area</p>
+<% end %>

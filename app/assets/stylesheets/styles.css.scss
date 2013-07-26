@@ -3,9 +3,25 @@ $baseFontFamily: IM Fell French Canon, serif;
 
 $navbarLinkColor: rgb(70,7,200);
 $navbarCollapseWidth: 775px;
-
+$btnPrimaryBackground: rgb(70,7,200);
+$placeholderText: black;
+$dropdownLinkBackgroundHover: rgb(70,7,200);
 
 @import 'bootstrap';
+
+.navbar .brand:hover, .navbar ul .active > a {
+   color: green;
+   background-color: rgb(250,240,215);
+ }
+
+.accordion-heading a:hover{
+  background-color: rgb(250,240,215);
+}
+
+.input-name {
+  font-weight: bold;
+  font-family:"Times New Roman", Times;
+}
 
 title {
 	font-size: small;
@@ -19,6 +35,13 @@ body {
   font-color: rgb(70,7,200);
 }
 
+.form-horizontal { 
+  color: rgb(70,7,200);
+}
+
+.form-actions { 
+ color: rgb(70,7,200);
+}
 
 @import 'bootstrap-responsive';
 
@@ -26,6 +49,9 @@ body {
 	margin-top: 100px;
   color: Purple;
  }
+
+h1 {color: rgb(70,7,200);
+}
 
 h2 {
   text-align: left;
@@ -89,4 +115,5 @@ h3 {
     width: 525px;
     margin-bottom: 25px;
     font-style: italic;
-}
+   
+  }
