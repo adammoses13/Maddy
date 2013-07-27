@@ -120,17 +120,19 @@ h3 {
     font-style: italic;
   }
 
-  #wrap {
+#wrap {
   min-height: 100%;
+
 }
 
 .push {
-height: 5em;
+  height: 5em;
 }
 
 #main {
-  overflow:auto;
-  padding-bottom:110px; /* this needs to be bigger than footer height*/
+  overflow:hidden;
+  padding-bottom:100px; /* this needs to be bigger than footer height*/
+ 
 }
 
 /*.box {
