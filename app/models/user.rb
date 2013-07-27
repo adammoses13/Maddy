@@ -8,7 +8,9 @@ class User < ActiveRecord::Base
  
 
 
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :name
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :current_password
 
 	validates_presence_of :name
+	validates_presence_of :password, :on => :create
+	
 end
