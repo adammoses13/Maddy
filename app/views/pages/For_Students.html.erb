@@ -8,18 +8,19 @@
 	<div class="well">
 		<h1>Student's Area</h1>
 		<div class="accordion" id="accordion2">
+		  
 		  <div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		       <h3> Student 1 </h3>
+		       <h3> Denise M </h3>
 		      </a>
 		    </div>
 		    <div id="collapseOne" class="accordion-body collapse">
 		      <div class="accordion-inner">
 		        <ul>
 		        	<li></li>
-											<li></li>
-											<li></li>
+							<li></li>
+							<li></li>
 		        </ul>
 		      </div>
 		    </div>
@@ -35,8 +36,8 @@
 		      <div class="accordion-inner">
 		        <ul>
 		        	<li></li>
-											<li></li>
-											<li></li>
+							<li></li>
+							<li></li>
 		        </ul>
 		      </div>
 		    </div>
@@ -76,10 +77,40 @@
 		    </div>
 		  </div>
 
-		  </div>
-		</div>
+
+
+
+
 		</div>
 	</div>
 <% else %>
 	<p>Please Login to view Student's Area</p>
+<% end %>
+
+<% if false %>
+
+New Student
+			<div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		       <h3> Student Name </h3>
+		      </a>
+		    </div>
+		    <div id="collapseOne" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li>INFO HERE</li>
+							<li>INFO HERE</li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+
+<%= link_to "What Viewer Sees", "http://www.WEBSITE.com", :target => '_blank'  %>  website
+
+<p>TITLE AND NAME</p>
+   <audio src="/audios/FILENAME.mp3" controls title="FLOATING BOX TITLE">   audiofile
+
+<a href="/FILENAME.pdf" target="_blank">WHAT PEOPLE READ</a>   pdf
+
 <% end %>
