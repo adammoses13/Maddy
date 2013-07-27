@@ -2,12 +2,13 @@ $baseFontFamily: IM Fell French Canon, serif;
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+French+Canon);
 
 $navbarLinkColor: rgb(70,7,200);
-$navbarCollapseWidth: 775px;
+$navbarCollapseWidth: 975px;
 $btnPrimaryBackground: rgb(70,7,200);
 $placeholderText: black;
 $dropdownLinkBackgroundHover: rgb(70,7,200);
 
 @import 'bootstrap';
+@import 'bootstrap-responsive';
 
 .navbar .brand:hover, .navbar ul .active > a {
    color: green;
