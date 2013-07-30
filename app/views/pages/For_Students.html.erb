@@ -5,27 +5,40 @@
 </div>
 
 <% if user_signed_in? %>
+	
 	<div class="well">
 		<h1>Student's Area</h1>
-		<div class="accordion" id="accordion2">
-		  
-		  <div class="accordion-group">
-		    <div class="accordion-heading">
-		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		       <h3> Denise M </h3>
-		      </a>
-		    </div>
-		    <div id="collapseOne" class="accordion-body collapse">
-		      <div class="accordion-inner">
-		        <ul>
-		        	<li></li>
-							<li></li>
-							<li></li>
-		        </ul>
-		      </div>
-		    </div>
-			</div>
-
+			<div class="accordion" id="accordion2">
+			
+			<% if current_user.id == 1 or 2 %>  
+			  <div class="accordion-group">
+			    <div class="accordion-heading">
+			      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+			       <h3> Denise M </h3>
+			      </a>
+			    </div>
+			    <div id="collapseOne" class="accordion-body collapse">
+			      <div class="accordion-inner">
+			        <ul>
+			        	<li>
+			        		<p>Etta James - At Last (piano melody)</p>
+   								<audio src="/audios/Denise_At_Last.mp3" controls title="At Last (piano melody)"></audio>
+   							</li>
+   							<li>
+			        		<p>Etta James - At Last (Accompaniment Only)</p>
+   								<audio src="/audios/Denise_At_Last_Accomp.mp3" controls title="At Last (Accomp)"></audio>
+   							</li>
+   							<li>
+			        		<p>Coldplay - Fix You (Accompaniment Only)</p>
+   								<audio src="/audios/Denise_Fix_You.mp3" controls title="Fix You (Accomp)"></audio>
+   							</li>
+							</ul>
+			      </div>
+			    </div>
+				</div>
+			<% end %>
+			
+		<% if current_user.id == 1 or 10 %>
 			<div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
@@ -42,11 +55,13 @@
 		      </div>
 		    </div>
 			</div>
+		<% end %>
 
+		<% if current_user.id == 1 or 4 %>
 			<div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		       <h3> Pam </h3>
+		       <h3> Pam D </h3>
 		      </a>
 		    </div>
 		    <div id="collapseThree" class="accordion-body collapse">
@@ -58,11 +73,13 @@
 		      </div>
 		    </div>
 			</div>
+		<% end %>
 
+		<% if current_user.id == 1 or 8 %>
 			<div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-		       <h3> Sarah </h3>
+		       <h3> Sarah M </h3>
 		      </a>
 		    </div>
 		    <div id="collapseFour" class="accordion-body collapse">
@@ -76,7 +93,9 @@
 		      </div>
 		    </div>
 		  </div>
+		<% end %>
 
+		<% if current_user.id == 1 or 9 %>
 			<div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
@@ -92,11 +111,13 @@
 		      </div>
 		    </div>
 		  </div>
+		<% end %>
 
+		<% if current_user.id == 1 or 12 %>
 			<div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
-		       <h3> Connor </h3>
+		       <h3> Connor D </h3>
 		      </a>
 		    </div>
 		    <div id="collapseSix" class="accordion-body collapse">
@@ -108,11 +129,13 @@
 		      </div>
 		    </div>
 		  </div>
+		<% end %>
 
+		<% if current_user.id == 1 or 7 %>
 		  <div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
-		       <h3> Sophie </h3>
+		       <h3> Sophie G </h3>
 		      </a>
 		    </div>
 		    <div id="collapseSeven" class="accordion-body collapse">
@@ -124,27 +147,37 @@
 		      </div>
 		    </div>
 		  </div>
+		<% end %>
 
+		<% if current_user.id == 1 or 5 %>
 		  <div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
-		       <h3> Chloe </h3>
+		       <h3> Chloe C </h3>
 		      </a>
 		    </div>
 		    <div id="collapseEight" class="accordion-body collapse">
 		      <div class="accordion-inner">
 		        <ul>
-		        	<li></li>
-							<li></li>
+		        	<li>
+		        		<p>Warmups</p>
+   								<audio src="/audios/Chloe_Warmups.mp3" controls title="Warmups"></audio>
+   						</li>
+							<li>
+								<p>Do-Re-Mi Song</p>
+   								<audio src="/audios/Chloe_Do_Re_Mi_Accomp.mp3" controls title="Do-Re-Mi"></audio>
+   						</li>
 		        </ul>
 		      </div>
 		    </div>
 		  </div>
+		<% end %>
 
+		<% if current_user.id == 1 or 13 %>
 		  <div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">
-		       <h3> Delphine </h3>
+		       <h3> Delphine C</h3>
 		      </a>
 		    </div>
 		    <div id="collapseNine" class="accordion-body collapse">
@@ -156,7 +189,7 @@
 		      </div>
 		    </div>
 		  </div>
-
+		<% end %>
 
 
 
@@ -170,6 +203,7 @@
 <% if false %>
 
 New Student
+		<% if current_user.id == ADD_ID_HERE %>
 			<div class="accordion-group">
 		    <div class="accordion-heading">
 		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse*ADD NUMBER*">
@@ -185,11 +219,12 @@ New Student
 		      </div>
 		    </div>
 		  </div>
+		<% end %>
 
 <%= link_to "What Viewer Sees", "http://www.WEBSITE.com", :target => '_blank'  %>  website
 
 <p>TITLE AND NAME</p>
-   <audio src="/audios/FILENAME.mp3" controls title="FLOATING BOX TITLE">   audiofile
+   <audio src="/audios/FILENAME.mp3" controls title="FLOATING BOX TITLE"></audio>   audiofile
 
 <a href="/FILENAME.pdf" target="_blank">WHAT PEOPLE READ</a>   pdf
 
