@@ -30,9 +30,14 @@
 	   								<audio src="/audios/Denise_At_Last_Accomp.mp3" controls title="At Last (Accomp)"></audio>
 	   							</li>
 	   							<li>
+				        		<p>Etta James - At Last (with vocals)</p>
+	   								<audio src="/audios/Denise_At_Last_Vocals.mp3" controls title="At Last (Vocals)"></audio>
+	   							</li>
+	   							<li>
 				        		<p>Coldplay - Fix You (Accompaniment Only)</p>
 	   								<audio src="/audios/Denise_Fix_You.mp3" controls title="Fix You (Accomp)"></audio>
 	   							</li>
+
 								</ul>
 				      </div>
 				    </div>
@@ -183,6 +188,60 @@
 		      </a>
 		    </div>
 		    <div id="collapseNine" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+							<li></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		<% end %>
+
+	<% if (current_user.id == 1) or (current_user.id == 3) %>
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen">
+		       <h3> Eyrie H </h3>
+		      </a>
+		    </div>
+		    <div id="collapseTen" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+							<li></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		<% end %>
+
+			<% if (current_user.id == 1) or (current_user.id == 6) %>
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEleven">
+		       <h3> John G </h3>
+		      </a>
+		    </div>
+		    <div id="collapseEleven" class="accordion-body collapse">
+		      <div class="accordion-inner">
+		        <ul>
+		        	<li></li>
+							<li></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		<% end %>
+
+			<% if (current_user.id == 1) or (current_user.id == 11) %>
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwelve">
+		       <h3> Liv G </h3>
+		      </a>
+		    </div>
+		    <div id="collapseTwelve" class="accordion-body collapse">
 		      <div class="accordion-inner">
 		        <ul>
 		        	<li></li>
