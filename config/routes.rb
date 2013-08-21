@@ -7,9 +7,8 @@ Maddysmusic::Application.routes.draw do
   get 'Contact_Me' => 'pages#Contact_Me'
   get 'For_Students' => 'pages#For_Students'
   
-  devise_for :users do
-  	resources :comments
-  end
+  devise_for :users, :controllers => { :passwords => "passwords" }
+		
   root :to => 'pages#home'
 
 
