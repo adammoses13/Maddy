@@ -1,4 +1,4 @@
- <% if current_user.id == 1 %>
+ <% if current_user.try(:admin?) %>
 
 
 <%= simple_form_for(@comment, :html => { class: 'form-horizontal' }) do |f| %>
