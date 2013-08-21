@@ -2,12 +2,15 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.find_all_by_user_id current_user[:id]
-
-    respond_to do |format|
+    if current_user.id=1
+      @comments = Comment.all
+    else
+      @comments = Comment.find_all_by_user_id current_user[:id]
+    end
+      respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @comments }
-    end
+      end
   end
 
   # GET /comments/1
