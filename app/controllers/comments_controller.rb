@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    if current_user.id=1
+    if current_user.try(:admin?)
       @comments = Comment.all
     else
       @comments = Comment.find_all_by_user_id current_user[:id]
