@@ -1,13 +1,11 @@
-<% if false %>
+<% if current_user.name = 'Maddy' %>
 
-<p id="notice"><%= notice %></p>
+<p id="notice"></p>
 
 <%= @comment.name %>
 <%= @comment.body %>
 
 <%= link_to 'Edit', edit_comment_path(@comment) %> |
 <%= link_to 'Back', comments_path %>
-
-
 
 <% end %>
