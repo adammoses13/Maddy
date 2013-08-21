@@ -6,6 +6,11 @@
 
 <% if user_signed_in? %>
 	
+ <% if false %>
+  <% if current_user.name = 'Maddy' %>
+  <%= link_to "Add Comment", new_comment_path %>
+    <% end %>
+<% end %>
 	<div class="well">
 		<h1>Student's Area</h1>
 			<div class="accordion" id="accordion2">
@@ -92,10 +97,9 @@
 		    <div id="collapseFour" class="accordion-body collapse">
 		      <div class="accordion-inner">
 		        <ul>
-		        	<li></li>
-		        	<li></li>
-		        	<li></li>
-		        	<li></li>
+		        	<li><p>Charlie Brown</p><audio src="/audios/Sarah_Charlie_Brown.mp3" controls title="Charlie Brown"></audio></li>
+		        	<li><p>Mozart - Sonata in C</p><audio src="/audios/Sarah_Sonata_in_C_Mozart.mp3" controls title="Sonata in C - Motzart"></audio></li>
+		        	
 		        </ul>
 		      </div>
 		    </div>
@@ -112,8 +116,8 @@
 		    <div id="collapseFive" class="accordion-body collapse">
 		      <div class="accordion-inner">
 		        <ul>
-		        	<li></li>
-							<li></li>
+		        	<li><p>Nina Simone - Feelin' Good</p><audio src="/audios/Yuna_Feelin_Good.mp3" controls title="Feelin' Good - Nina Simone"></audio></li>
+							
 		        </ul>
 		      </div>
 		    </div>
