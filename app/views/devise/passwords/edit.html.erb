@@ -1,11 +1,11 @@
-<h2>Change Your Password</h2>
+<h1>Change Your Password</h1>
 
 <%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), html: { class: 'form-horizontal', :method => :put}) do |f| %>
   <%= devise_error_messages! %><br/>
   </br>
   <%= f.hidden_field :reset_password_token %>
 
-  <%= f.input :password, :autofocus => true, label: "New Password", :input_html => { :class => "input-name" } %>
+  <%= f.input :password, :autofocus => true, label: "New Password <br/> (Min. 8 characters)", :input_html => { :class => "input-name" } %>
 
   <%= f.input :password_confirmation, label: "Confirm New Password", :input_html => { :class => "input-name" } %></br>
 

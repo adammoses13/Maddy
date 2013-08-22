@@ -17,7 +17,9 @@ Maddysmusic::Application.routes.draw do
 		
   root :to => 'pages#home'
 
-
+resources :inquiries, :only => [:new, :create] do
+  get 'thank_you', :on => :collection
+end
 
  
 end
