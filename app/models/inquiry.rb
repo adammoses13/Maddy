@@ -27,7 +27,7 @@ class Inquiry
 
   def deliver
     return false unless valid?
-    UserMailer.inquiry_email(@inquiry).deliver
+    UserMailer.inquiry_email(self).deliver
     end
 
   def persisted?

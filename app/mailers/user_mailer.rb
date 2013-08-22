@@ -13,10 +13,10 @@ class UserMailer < ActionMailer::Base
   end
 
 	def inquiry_email(inquiry)
-    
+    @inquiry = inquiry
 
 
-    mail(to: "adammoses13@hotmail.com", subject: 'Website Inquiry', body: :message)
+    mail(to: "adammoses13@hotmail.com", subject: 'Website Inquiry')
   end
 
 end
