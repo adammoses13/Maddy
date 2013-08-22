@@ -21,7 +21,7 @@
           <li><%= link_to "Resources", { :controller => '/pages',  :action => 'Resources'} %></li>
 
           <% if user_signed_in? %>
-          <li><%= link_to "Student's Area", { :controller => '/pages',  :action => 'For_Students'} %></li>
+          <li><%= link_to "Student's Area", { :controller => '/comments',  :action => 'index'} %></li>
           <% end %>
         </ul>
         <ul class="nav pull-right nav-pills">
