@@ -16,7 +16,7 @@ class UserMailer < ActionMailer::Base
     @inquiry = inquiry
 
 
-    mail(to: "adammoses13@hotmail.com", subject: 'Website Inquiry')
+    mail(to: "maddymoses13@hotmail.com", subject: 'Website Inquiry')
   end
 
 end

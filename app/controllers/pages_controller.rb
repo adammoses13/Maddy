@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
+  
   def home
-  end
+  	@reviews = Review.all
+  	  	 end
 
 	def action
 	end

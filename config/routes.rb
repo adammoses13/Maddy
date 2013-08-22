@@ -1,6 +1,5 @@
 Maddysmusic::Application.routes.draw do
 
-
 	get 'Resources' => 'pages#Resources'
   get 'About_Me' => 'pages#About_Me'
   get 'My_Philosophy' => 'pages#My_Philosophy'
@@ -16,10 +15,18 @@ Maddysmusic::Application.routes.draw do
 
 		
   root :to => 'pages#home'
+    
 
-resources :inquiries, :only => [:new, :create] do
-  get 'thank_you', :on => :collection
-end
+    resources :reviews
 
- 
+
+
+  resources :inquiries, :only => [:new, :create] do
+    get 'thank_you', :on => :collection
+  end
+
+  
+  
+
+
 end
