@@ -12,11 +12,11 @@ class UserMailer < ActionMailer::Base
     mail(to: user.email, subject: 'New Content Added')
   end
 
-	def inquiry_email
-    @name = @name
-    @email = @email
-    @message = @message
-    mail(to: "adammoses13@hotmail.com", subject: 'Website Inquiry')
+	def inquiry_email(inquiry)
+    
+
+
+    mail(to: "adammoses13@hotmail.com", subject: 'Website Inquiry', body: :message)
   end
 
 end
