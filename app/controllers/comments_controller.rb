@@ -2,15 +2,19 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    if current_user.try(:admin?)
-      @comments = Comment.all
-    else
-      @comments = Comment.find_all_by_user_id current_user[:id]
-    end
-      respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @comments }
+    if user_signed_in?
+      if current_user.try(:admin?)
+        @comments = Comment.all
+      else
+        @comments = Comment.find_all_by_user_id current_user[:id]
       end
+        respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @comments }
+        end
+    else
+     redirect_to root_path, notice: "You must be signed in to view Student's Area"
+    end
   end
 
   # GET /comments/1
@@ -44,11 +48,12 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(params[:comment])
-
+    #@user = @comment.user
     respond_to do |format|
       if @comment.save
         format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
         format.json { render json: @comment, status: :created, location: @comment }
+        #UserMailer.added_comment(@user).deliver
       else
         format.html { render action: "new" }
         format.json { render json: @comment.errors, status: :unprocessable_entity }

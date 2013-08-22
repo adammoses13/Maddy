@@ -7,4 +7,11 @@ class Comment < ActiveRecord::Base
   validates_attachment_content_type :audio, :content_type => ['audio/mp3', 'audio/mp4', 'application/mp3', 'audio/mpeg']
 
   belongs_to :user
+
+  
+  after_create :send_email
+	  def send_email
+	  	UserMailer.added_comment(self.user).deliver
+	  end
+
 end
