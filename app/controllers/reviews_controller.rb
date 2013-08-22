@@ -44,6 +44,7 @@ class ReviewsController < ApplicationController
 
     respond_to do |format|
       if @review.save
+        @review.send_review_notification
         format.html { redirect_to root_path, notice: 'Thank you, your review was successfully created.' }
         format.json { render json: @review, status: :created, location: @review }
       else
