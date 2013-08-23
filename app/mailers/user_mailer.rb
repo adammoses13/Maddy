@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "MaddysMusicSLC@gmail.com"
+  default from: "maddy@maddysmusic.com"
 
 
 	def reset_password_instructions(user)

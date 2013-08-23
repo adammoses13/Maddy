@@ -72,12 +72,12 @@ Maddysmusic::Application.configure do
   ActionMailer::Base.perform_deliveries = true
   ActionMailer::Base.raise_delivery_errors = true
   ActionMailer::Base.smtp_settings = 
-  { :address            => 'smtp.gmail.com',
+  { :address            => 'smtp.1and1.com',
     :port               => 587,
-    :domain             => 'gmail.com', #you can also use google.com
+    :domain             => '1and1.com', #you can also use google.com
     :authentication     => :plain,
-    :user_name          => 'MaddysMusicSLC@gmail.com',
-    :password           => ENV['PASSWORD']}
+    :user_name          => 'maddy@maddysmusic.com',
+   }
 
 
   config.paperclip_defaults = {
@@ -89,3 +89,9 @@ Maddysmusic::Application.configure do
   }
 }
 end
+ #{ :address            => 'smtp.gmail.com',
+ #   :port               => 587,
+ #   :domain             => 'gmail.com', #you can also use google.com
+ #   :authentication     => :plain,
+ #   :user_name          => 'MaddysMusicSLC@gmail.com',
+ #   :password           => ENV['PASSWORD']}
