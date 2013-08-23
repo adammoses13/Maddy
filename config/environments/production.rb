@@ -75,7 +75,7 @@ Maddysmusic::Application.configure do
   { :address            => 'smtp.1and1.com',
     :port               => 587,
     :domain             => '1and1.com', #you can also use google.com
-    :authentication     => :plain,
+    :authentication     => :login,
     :user_name          => 'maddy@maddysmusic.com',
     :password           => ENV['PASSWORD']
    }
