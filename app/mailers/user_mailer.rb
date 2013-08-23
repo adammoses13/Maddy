@@ -19,7 +19,7 @@ class UserMailer < ActionMailer::Base
 
   def review_notification(review)
     @review = review
-    mail(to: "adammoses13@hotmail.com", subject: 'A New Review Has Been Posted')
+    mail(to: "maddymoses13@hotmail.com", subject: 'A New Review Has Been Posted')
   end
 
 end
