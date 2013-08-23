@@ -72,7 +72,7 @@ Maddysmusic::Application.configure do
   ActionMailer::Base.perform_deliveries = true
   ActionMailer::Base.raise_delivery_errors = true
   ActionMailer::Base.smtp_settings = 
-  { :address            => 'smtp.1and1.com',
+  { :address            => 'auth.smtp.1and1.com',
     :port               => 587,
     :domain             => '1and1.com', #you can also use google.com
     :authentication     => :login,
