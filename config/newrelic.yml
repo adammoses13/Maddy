@@ -3,9 +3,9 @@
 # Ruby, Java, .NET, PHP, and Python applications with deep visibility and low overhead.
 # For more information, visit www.newrelic.com.
 #
-# Generated June 28, 2013
+# Generated August 23, 2013
 #
-# This configuration file is custom generated for app16092553@heroku.com
+# This configuration file is custom generated for app16109734@heroku.com
 
 
 # Here are the settings that are common to all environments
@@ -15,7 +15,7 @@ common: &default_settings
   # You must specify the license key associated with your New Relic
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
-  license_key: 'f2bd69aa4e843dc3143427597bf31885a1592714'
+  license_key: 'ecca4270e65fe94a58f4a0e364584b44c2a721c0'
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
