@@ -77,6 +77,7 @@ Maddysmusic::Application.configure do
     :domain             => '1and1.com', #you can also use google.com
     :authentication     => :plain,
     :user_name          => 'maddy@maddysmusic.com',
+    :password           => ENV['PASSWORD']
    }
 
 
