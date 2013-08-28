@@ -1,28 +1,7 @@
-<% if false %>
-<h1>Listing reviews</h1>
+<%= render 'pages/home' %>
 
-<table>
-  <tr>
-    <th>name</th>
-    <th>review</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="container" class="js-masonry" data-masonry-options='{"itemSelector": ".box" }'>
+  <%= render @reviews %>
+</div>
 
-<% @reviews.each do |review| %>
-  <tr>
-    <td><%= review.name %></td>
-    <td><%= review.review %></td>
-    <td><%= link_to 'Show', review %></td>
-    <td><%= link_to 'Edit', edit_review_path(review) %></td>
-    <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Review', new_review_path %>
-
-<% end %>
+<%= will_paginate @reviews %>

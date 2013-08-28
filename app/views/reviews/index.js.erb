@@ -1,0 +1,9 @@
+$boxes = $('<%= j render(@reviews) %>')
+
+$('#reviews').append( $boxes );
+
+<% if @reviews.next_page %>
+	$('.pagination').replaceWith('<%= j will_paginate(@reviews) %>');
+<% else %>
+	$('.pagination').remove();
+<% end %>

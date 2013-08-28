@@ -14,7 +14,7 @@ Maddysmusic::Application.routes.draw do
 
 
 		
-  root :to => 'pages#home'
+  root :to => 'reviews#index'
     
 
     resources :reviews

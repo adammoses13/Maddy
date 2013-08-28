@@ -2,11 +2,12 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
-    @reviews = Review.all
+    @reviews = Review.order("created_at desc").page(params[:page]).per_page(2)
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @reviews }
+      format.js
     end
   end
 

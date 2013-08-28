@@ -11,7 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //
-//= require jquery-1.10.2.min.js
+//= require jquery-1.7.2.min.js
 //= require masonry.pkgd.min.js
 //= require modernizr-2.5.3.min.js
 //= require jquery_ujs
