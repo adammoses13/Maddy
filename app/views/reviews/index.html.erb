@@ -1,7 +1,7 @@
 <%= render 'pages/home' %>
 
-<div id="container" class="js-masonry" data-masonry-options='{"itemSelector": ".box" }'>
-  <%= render @reviews %>
+<div id="reviews" class="js-masonry" data-masonry-options='{"itemSelector": ".box" }'>
+<%= render @reviews %>
 </div>
 
 <%= will_paginate @reviews %>

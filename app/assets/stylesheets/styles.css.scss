@@ -104,7 +104,9 @@ h3 {
  color: rgb(70,7,200);
 } 
 
-.box {p {
+.box {
+display: block; 
+  p {
 font-size: 13px;
 line-height: 1.4em;
 
