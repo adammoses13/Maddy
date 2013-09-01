@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Maddy's Music | Piano Lessons | Flute Lessons | Voice Lessons | Salt Lake City</title>
+  	<title><%= @title %></title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
-	  <meta name="description" content='Private piano, flute and voice lessons for students of all ages in Salt Lake City, UT' />
-    <meta name="keywords" content='music, piano, flute, voice, vocal, 	lesson, lessons, music lesson, piano lessons, flute lessons, voice Lessons, salt lake city, sandy, utah' />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <meta name="description" content='<%=h yield(:description) %>'>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	  <%= favicon_link_tag %>
 	</head>
+	
 	<body>
-		
 		<%= render 'layouts/header' %>
-		<div class="container">
- 			<% flash.each do |name, msg| %>
-                <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
-            <% end %>
-			<%= yield %>
-			<%= render 'layouts/footer' %>
-		</div>
+			<div class="container">
+	 			<% flash.each do |name, msg| %>
+	                <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+	            <% end %>
+				<%= yield %>
+				<%= render 'layouts/footer' %>
+			</div>
 	</body>
 </html>
