@@ -2,7 +2,7 @@
 	<div class="box">
 		<p>"<%= review.review %>"
 			<% if review.name? %>
-				</br></br>-<%= review.name %></br>
+				<br /><br />-<%= review.name %>
 			<% end %>
 	 		<% if current_user.try(:admin?) %>
 	 			<%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
