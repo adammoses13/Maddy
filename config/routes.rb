@@ -5,7 +5,8 @@ Maddysmusic::Application.routes.draw do
   get 'My_Philosophy' => 'pages#My_Philosophy'
   get 'Contact_Me' => 'pages#Contact_Me'
   get 'For_Students' => 'pages#For_Students'
-  
+  get 'Payment' => 'pages#Payment'
+
   devise_for :users, :controllers => { :passwords => "passwords" }
 
   devise_for :users do
