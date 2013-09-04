@@ -8,6 +8,9 @@
 
 <div class="well">
 	<h1>Payment Page</h1>
+	...in progress
+
+	<% if current_user.try(:admin?) %>
 	<ul>
 		<li>.5 hr Skype Lesson <script src='assets/paypal-button.min.js/?merchant=TF3CUUVND9NSA'
 		    data-button="buynow" 
@@ -24,4 +27,5 @@
 		    data-env="sandbox"></script>
 		</li>
 	</ul>
+	<% end %>
 </div>
