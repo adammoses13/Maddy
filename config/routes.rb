@@ -18,9 +18,9 @@ Maddysmusic::Application.routes.draw do
   root :to => 'reviews#index'
     
 
-    resources :reviews
+  resources :reviews
 
-
+  resources :products
 
   resources :inquiries, :only => [:new, :create] do
     get 'thank_you', :on => :collection

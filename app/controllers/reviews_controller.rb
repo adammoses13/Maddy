@@ -10,7 +10,6 @@ class ReviewsController < ApplicationController
       format.js
     end
   end
-
   # GET /reviews/1
   # GET /reviews/1.json
   def show

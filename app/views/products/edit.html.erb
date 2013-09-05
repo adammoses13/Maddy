@@ -1,0 +1,8 @@
+ <% if current_user.try(:admin?) %>
+
+
+<h1>Edit Product</h1>
+
+<%= render 'form' %>
+
+<% end %>

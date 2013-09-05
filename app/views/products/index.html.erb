@@ -1,0 +1,27 @@
+<%= render 'pages/payment' %>
+<% if current_user.try(:admin?) %>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price Per Lesson (USD)</th>
+        <th>Total Price (USD)</th>
+        <th></th>
+        
+        <% if current_user.try(:admin?) %>
+  	      <th>Edit</th>
+  	      <th>Delete</th>
+  			<% end %>
+      
+      </tr>
+    </thead>
+      
+      <tbody>
+        <%= render @products %>
+      </tbody>
+  </table>
+
+<% end %>

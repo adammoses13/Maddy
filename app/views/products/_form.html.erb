@@ -1,0 +1,25 @@
+<%= simple_form_for(@product, html: { class: 'form-horizontal'}) do |f| %>
+    <% if @product.errors.any? %>
+    <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</br>
+
+    <%= f.input :product, :autofocus => true, :input_html => { :class => "input-name" } %>
+  
+    <%= f.input :unitprice, :input_html => { :class => "input-name" } %>
+      
+    <%= f.input :description, as: :text, :input_html => { rows: "4", :class => "input-name" } %>
+    
+    <%= f.input :quantity, :input_html => { :class => "input-name" } %>
+    
+    <%= f.input :totalprice, :input_html => { :class => "input-name" } %>
+  
+  <div class="form-actions">
+    <%= f.submit "Submit Product", class: "btn btn-primary btn-small" %>
+  </div>
+
+<% end %>
