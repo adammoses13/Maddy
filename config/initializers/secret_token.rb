@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Maddysmusic::Application.config.secret_token = '76c0d3d492393b9f0a6ba8667bdd315c059f062265dbac63e905cded4d5616fd5a7626fbdf3bb3fd7e2f5a4fa0cee42ca07aa56688492be5a8e965576f1285bf'
+Maddysmusic::Application.config.secret_token = '3ab17136103e313097092aa2523291e6bc31d77f6533bf7b975dd72afc3db1570316fbff909040391a245830e81ffacc69e4de4fdd3595530177a29f4ed842ed'
