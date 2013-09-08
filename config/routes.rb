@@ -9,9 +9,8 @@ Maddysmusic::Application.routes.draw do
 
   devise_for :users, :controllers => { :passwords => "passwords" }
 
-  devise_for :users do
   	resources :comments
-  end
+
 
 
 		
