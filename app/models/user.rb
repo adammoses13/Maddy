@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
  
 
 
-  attr_accessible  :secret_key, :admin, :displayname, :reset_password_token, :reset_password_sent_at, :email, :password, :password_confirmation, :remember_me, :name, :current_password
+  attr_accessible  :admin, :displayname, :reset_password_token, :reset_password_sent_at, :email, :password, :password_confirmation, :remember_me, :name, :current_password
 
 	validates_presence_of :name
 	validates_presence_of :password, :on => :create
