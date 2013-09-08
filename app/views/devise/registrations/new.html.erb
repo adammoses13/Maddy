@@ -10,14 +10,15 @@
 	  <%= devise_error_messages! %>
 
 	  
-	  <%= f.input :email, :autofocus => true %>
+	  <%= f.input :name, label: "sign in name" %>
   
 	  <%= f.input :password %>
 	  
 	  <%= f.input :password_confirmation %>
-
-	  <%= f.input :name, label: "sign in name" %>
+	  
 		<%= f.input :displayname, label: "name they will see on students page" %>
+
+		<%= f.input :email, :autofocus => true %>
 
 <div class="form-actions">
 	  <%= f.submit "Sign up" %>
