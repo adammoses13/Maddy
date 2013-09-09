@@ -10,6 +10,11 @@ $dropdownLinkBackgroundHover: rgb(70,7,200);
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 
+.marquee {
+  color: red;
+  font-weight: bold;
+  font-size: large;
+}
 .navbar .brand:hover, .navbar ul .active > a {
    color: green;
    background-color: rgb(250,240,215);
