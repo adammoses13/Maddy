@@ -1,24 +1,19 @@
-<% if current_user.try(:admin?) %>
-	
-	<tr>
-		 	
-	 	<td><%= product.product %></td>
-	  <td><%= product.description %></td>
-	  <td><%= product.quantity %></td>
-	  <td><%= product.unitprice %></td>
-	  <td><%= product.totalprice %></td>
-	  <td><script src='assets/paypal-button.min.js/?merchant=TF3CUUVND9NSA'
-			    data-button="buynow" 
-			    data-name="<%= product.product %>" 
-			    data-amount="<%= product.totalprice %>" 
-			    data-currency="USD" 
-			    ></script></td>
+<tr>
+	 	
+ 	<td style="vertical-align:middle" ><%= product.product %></td>
+  <td style="text-align:center; vertical-align:middle" ><%= product.description %></td>
+  <td style="text-align:center; vertical-align:middle" ><%= product.unitprice %></td>
+  <td style="text-align:center; vertical-align:middle" ><%= product.totalprice %></td>
+  <td style="text-align:center; vertical-align:middle" ><script src='assets/paypal-button.min.js/?merchant=TF3CUUVND9NSA'
+		    data-button="buynow" 
+		    data-name="<%= product.product %>" 
+		    data-amount="<%= product.totalprice %>" 
+		    data-currency="USD" 
+		    ></script></td>
 
-	  <% if current_user.try(:admin?) %>
-		  <td><%= link_to 'Edit', edit_product_path(product) %></td>
-		  <td><%= link_to 'Delete', product, :method => :delete, data: { confirm: 'Are you sure?' } %></td>
-		<% end %>
+  <% if current_user.try(:admin?) %>
+	  <td><%= link_to 'Edit', edit_product_path(product) %></td>
+	  <td><%= link_to 'Delete', product, :method => :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>
 
-	</tr>
-
-<% end %>
+</tr>

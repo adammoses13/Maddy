@@ -10,6 +10,21 @@ $dropdownLinkBackgroundHover: rgb(70,7,200);
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 
+table{
+  border-color: rgb(70,7,200);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.table th{
+  background-color: rgb(250,240,215);
+  color: rgb(70,7,200);
+}
+
+tr{
+  background-color: white;
+}
+
 .marquee {
   color: red;
   font-weight: bold;
