@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130905163455) do
+ActiveRecord::Schema.define(:version => 20131027160755) do
 
   create_table "comments", :force => true do |t|
     t.text     "body"
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(:version => 20130905163455) do
     t.integer  "audio_file_size"
     t.datetime "audio_updated_at"
     t.string   "name"
+    t.string   "doc_file_name"
+    t.string   "doc_content_type"
+    t.integer  "doc_file_size"
+    t.datetime "doc_updated_at"
+    t.string   "docname"
   end
 
   create_table "products", :force => true do |t|

@@ -25,7 +25,12 @@
                 <% @comments.each do |comment| %>
                   <li>
                     <p><%= comment.body %></br>
-                      <%= link_to 'Listen', comment.audio.url -%>   
+                    <%  if comment.audio? %>
+                      <%= link_to 'Listen', comment.audio.url -%>
+                    <% end %>
+                    <%  if comment.doc? %>
+                      <a href="<%= comment.doc.url %>" target="_blank"> <%= comment.docname %> </a> 
+                    <% end %>  
                       <% if current_user.try(:admin?) %>
                       <%= link_to 'Edit', edit_comment_path(comment) %>
                       <%= link_to 'Destroy', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %>
