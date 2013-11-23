@@ -1,4 +1,4 @@
-
+<% if current_user.try(:admin?) %>
 	<div class="box">
 		<p>"<%= review.review %>"
 			<% if review.name? %>
@@ -9,5 +9,5 @@
 		 		<% end %>
 		</p>
 	</div>
-
+<% end %>
 
