@@ -88,4 +88,6 @@
 	</div>
 
 </br>
-<%= link_to 'Post Review', new_review_path %>
+<% if user_signed_in? %>
+	<%= link_to 'Post Review', new_review_path %>
+<% end %>
