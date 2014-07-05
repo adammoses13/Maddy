@@ -40,7 +40,7 @@ class ReviewsController < ApplicationController
   # POST /reviews
   # POST /reviews.json
   def create
-    @review = Review.new(params[:review]) unless params[:check].present?
+    @review = Review.new(params[:review]) unless params[:content].present?
 
     respond_to do |format|
       if @review.save
