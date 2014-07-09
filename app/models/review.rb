@@ -1,7 +1,7 @@
 class Review < ActiveRecord::Base
    attr_accessible :name, :review, :content
 
-validates :content, :content_is_blank
+validates :content_is_blank
 
 def content_is_blank
   errors.add :content if content.present?
