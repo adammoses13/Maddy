@@ -6,9 +6,9 @@
 
   	<%= f.input :review, as: :text, label: 'Review', input_html: { rows: "4", :class => "input-name" } %>
 	
-
-		<% f.input :content, input_html: { :type => "hidden", tabindex: '-1' } %>
-  </div>
+		<%= f.hidden_field :content, input_html: { :class => "hide", tabindex: '-1' } %>
+ 
+ </div>
   
 
   <div class="form-actions">

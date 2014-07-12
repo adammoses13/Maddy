@@ -1,11 +1,11 @@
 class Review < ActiveRecord::Base
-   attr_accessible :name, :review, :content
+   attr_accessible :name, :review, :content, :check
 
-#validates :content_is_blank
+validate :content_is_blank
 
-#def content_is_blank
-#  errors.add :content if content.present?
-#end
+def content_is_blank
+  errors.add :content if content.present?
+end
 
 
 
