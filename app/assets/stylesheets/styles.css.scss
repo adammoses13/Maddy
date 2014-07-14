@@ -44,6 +44,16 @@ tr{
   font-family:"Times New Roman", Times;
 }
 
+.honeypot {
+  display: none !important;
+  font-color: rgb(70,7,200);
+  font-weight: bold;
+}
+
+.form-inputs2 {
+  color: rgba(70,7,200,0);
+}
+
 title {
 	font-size: small;
 }
