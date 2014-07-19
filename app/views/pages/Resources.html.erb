@@ -6,23 +6,25 @@
 		<%= image_tag("LOGO.jpg") %>
 	</h2>
 </div>
+ 
 
 <div class="well">
 	<h1>Resources</h1>
 	<div class="accordion" id="accordion2">
 
+<% if false %>
 	<div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
-	       <h3> Challenges </h3>
-	      </a>
-	    </div>
-	    <div id="collapseSix" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <ul>
-	        	<li><p><b>Listening Challenge</b><br/>
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+		   <h3> Challenges </h3>
+		  </a>
+		</div>
+		<div id="collapseSix" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<ul>
+				<li><p><b>Listening Challenge</b><br/>
 
-	        		Students taking music lessons for 1 yr or less:<br/>
+					Students taking music lessons for 1 yr or less:<br/>
 							1.	What time signature do you think this piece is in?  (Think how many beats per measure…)<br/>
 							2.	Do you think the start of this piece is major (happy) or minor (sad)?<br/> 
 							3.	Can you hear any sections repeat? If so, how many times?<br/>
@@ -30,11 +32,11 @@
 							5.	What instrument do you think is playing?<br/><br/>
 
 						Students taking lessons over 1 yr:<br/>
-					     6.   Can you name the composer?<br/>
-					     7.   If you had to give a tempo suggestion, what would it be ? (eg, presto, largo etc.)<br/>
-					     8.   How many perfect cadences can you hear?<br/>
-					     9.   How many ornaments are there?<br/>
-					     10.  a) Do you think the piece changes key?  b) If so, where does it go?<br/><br/>
+						 6.   Can you name the composer?<br/>
+						 7.   If you had to give a tempo suggestion, what would it be ? (eg, presto, largo etc.)<br/>
+						 8.   How many perfect cadences can you hear?<br/>
+						 9.   How many ornaments are there?<br/>
+						 10.  a) Do you think the piece changes key?  b) If so, where does it go?<br/><br/>
 
 							Happy Listening!</li><br/>
 
@@ -66,116 +68,116 @@
 									<br/><br/>
 									<b>Deadline for Challenges is April 30</b>
 						</p>
-            	</li>
+				</li>
 					</ul>
-	      </div>
-	    </div>
+		  </div>
 		</div>
-	  
+	</div>
+<% end %> 
 	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-	       <h3> Websites </h3>
-	      </a>
-	    </div>
-	    <div id="collapseOne" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <ul>
-	        	<li><%= link_to "Free Flute Tunes", "http://www.flutetunes.com", :target => '_blank'  %>.  Also has printable manuscript paper. </li>
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		   <h3> Websites </h3>
+		  </a>
+		</div>
+		<div id="collapseOne" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<ul>
+				<li><%= link_to "Free Flute Tunes", "http://www.flutetunes.com", :target => '_blank'  %>.  Also has printable manuscript paper. </li>
 					<li><%= link_to "Great vocal warm-ups", "http://www.aussievocalcoach.com" , :target => '_blank' %> for beginner to intermediate singers. </li>
 					<li><%= link_to "musicnotes.com", "http://www.musicnotes.com", :target => '_blank'  %>, downloadable sheet music in different keys. </li>
-	        </ul>
-	      </div>
-	    </div>
+			</ul>
+		  </div>
+		</div>
 		</div>
 
 		<div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-	       <h3> Recommended Books </h3>
-	      </a>
-	    </div>
-	    <div id="collapseTwo" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <ul>
-	        	<li>The Faber and Faber Series for Young Beginners</li>
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		   <h3> Recommended Books </h3>
+		  </a>
+		</div>
+		<div id="collapseTwo" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<ul>
+				<li>The Faber and Faber Series for Young Beginners</li>
 						<li>Hal Leonard Harmony and Theory</li>
 						<li>Contemporary Music Theory (Levels 1, 2 and 3) by Mark Harrison</li>
-	        </ul>
-	      </div>
-	    </div>
+			</ul>
+		  </div>
+		</div>
 		</div>
 
 		<div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-	       <h3> Recommended Articles </h3>
-	      </a>
-	    </div>
-	    <div id="collapseThree" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <ul>
-	        	<li><%= link_to "Methods for Efficient Practice", "http://www.essential-music-practice.com/efficient-practice.html", :target => '_blank'  %></li>
-	        	<li><%= link_to "The Benefits of Music Education for Children", "http://www.pbs.org/parents/education/music-arts/the-benefits-of-music-education/", :target => '_blank'  %></li>
-	        </ul>
-	      </div>
-	    </div>
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+		   <h3> Recommended Articles </h3>
+		  </a>
+		</div>
+		<div id="collapseThree" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<ul>
+				<li><%= link_to "Methods for Efficient Practice", "http://www.essential-music-practice.com/efficient-practice.html", :target => '_blank'  %></li>
+				<li><%= link_to "The Benefits of Music Education for Children", "http://www.pbs.org/parents/education/music-arts/the-benefits-of-music-education/", :target => '_blank'  %></li>
+			</ul>
+		  </div>
+		</div>
 		</div>
 
 		<div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-	       <h3> Vocal Warm-Ups (Females)</h3>
-	      </a>
-	    </div>
-	    <div id="collapseFour" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <ul>
-	         	<li><p>1. Warm-up Resonators</p>
-            	<audio src="/audios/warmups1.mp3" controls title=""></audio> </li>
-	        	<li><p>2. Sustained Notes</p>
-            	<audio src="/audios/warmups2.mp3" controls title=""></audio> </li>
-	        	<li><p>3. Do-So Warm-ups</p>
-            	<audio src="/audios/warmups3.mp3" controls title=""></audio> </li>
-	        	<li><p>4. Do-So Without Melody</p>
-            	<audio src="/audios/warmups4.mp3" controls title=""></audio> </li>
-	        	<li><p>5. Major Scale</p>
-            	<audio src="/audios/warmups5.mp3" controls title=""></audio> </li>
-	        	<li><p>6. Minor Scale</p>
-            	<audio src="/audios/warmups6.mp3" controls title=""></audio> </li>
-	        	<li><p>7. Blues Scale</p>
-            	<audio src="/audios/warmups7.mp3" controls title=""></audio> </li>
-	        	<li><p>8. Arpeggios</p>
-            	<audio src="/audios/warmups8.mp3" controls title=""></audio> </li>
-	        	<li><p>9. Complex Arpeggios</p>
-            	<audio src="/audios/warmups9.mp3" controls title=""></audio> </li>
-	        	<li><p>10. Note Melds</p>
-            	<audio src="/audios/warmups10.mp3" controls title=""></audio> </li>
-	        	<li><p>11. Chromatics</p>
-            	<audio src="/audios/warmups11.mp3" controls title=""></audio> </li>
-	        	<li><p>12. Intervals</p>
-            	<audio src="/audios/warmups12.mp3" controls title=""></audio> </li>
-	        </ul>
-	      </div>
-	    </div>
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+		   <h3> Vocal Warm-Ups (Females)</h3>
+		  </a>
+		</div>
+		<div id="collapseFour" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<ul>
+				<li><p>1. Warm-up Resonators</p>
+				<audio src="/audios/warmups1.mp3" controls title=""></audio> </li>
+				<li><p>2. Sustained Notes</p>
+				<audio src="/audios/warmups2.mp3" controls title=""></audio> </li>
+				<li><p>3. Do-So Warm-ups</p>
+				<audio src="/audios/warmups3.mp3" controls title=""></audio> </li>
+				<li><p>4. Do-So Without Melody</p>
+				<audio src="/audios/warmups4.mp3" controls title=""></audio> </li>
+				<li><p>5. Major Scale</p>
+				<audio src="/audios/warmups5.mp3" controls title=""></audio> </li>
+				<li><p>6. Minor Scale</p>
+				<audio src="/audios/warmups6.mp3" controls title=""></audio> </li>
+				<li><p>7. Blues Scale</p>
+				<audio src="/audios/warmups7.mp3" controls title=""></audio> </li>
+				<li><p>8. Arpeggios</p>
+				<audio src="/audios/warmups8.mp3" controls title=""></audio> </li>
+				<li><p>9. Complex Arpeggios</p>
+				<audio src="/audios/warmups9.mp3" controls title=""></audio> </li>
+				<li><p>10. Note Melds</p>
+				<audio src="/audios/warmups10.mp3" controls title=""></audio> </li>
+				<li><p>11. Chromatics</p>
+				<audio src="/audios/warmups11.mp3" controls title=""></audio> </li>
+				<li><p>12. Intervals</p>
+				<audio src="/audios/warmups12.mp3" controls title=""></audio> </li>
+			</ul>
+		  </div>
+		</div>
 	  </div>
 
 		<div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-	       <h3> New Students </h3>
-	      </a>
-	    </div>
-	    <div id="collapseFive" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <ul>
-	        	<li><a href="/newparentleaflet.pdf" target="_blank">New Parent Leaflet</a></li>
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+		   <h3> New Students </h3>
+		  </a>
+		</div>
+		<div id="collapseFive" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<ul>
+				<li><a href="/newparentleaflet.pdf" target="_blank">New Parent Leaflet</a></li>
 					</ul>
-	      </div>
-	    </div>
+		  </div>
+		</div>
 		</div>
 
- 		
+		
 
 
 	</div>
