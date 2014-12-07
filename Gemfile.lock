@@ -78,7 +78,7 @@ GEM
     mini_portile (0.6.1)
     multi_json (1.10.1)
     newrelic_rpm (3.9.7.266)
-    nokogiri (1.6.4.1-x86-mingw32)
+    nokogiri (1.6.5-x86-mingw32)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     paperclip (3.5.4)
@@ -157,6 +157,7 @@ DEPENDENCIES
   honeypot-captcha
   jquery-rails
   newrelic_rpm
+  nokogiri (= 1.6.5)
   paperclip (~> 3.0)
   pg
   rails (= 3.2.13)
