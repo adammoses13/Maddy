@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '3.2.13'
 gem 'jquery-rails'
@@ -11,9 +12,9 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'thin'
 gem 'honeypot-captcha'
-gem 'nokogiri', '1.4.7'
-gem 'execjs', '2.5.0'
-
+gem 'nokogiri', '1.6.5'
+gem 'execjs', '2.2.2'
+gem 'rails_12factor'
 
 group :production do
   gem 'pg', '0.16.0'
