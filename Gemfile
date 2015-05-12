@@ -12,7 +12,7 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'thin'
 gem 'honeypot-captcha'
 gem 'nokogiri', '1.4.7'
-gem 'execjs', '2.5.1'
+gem 'execjs', '2.5.0'
 
 group :production do
   gem 'pg'
