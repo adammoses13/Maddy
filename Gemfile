@@ -14,8 +14,9 @@ gem 'honeypot-captcha'
 gem 'nokogiri', '1.4.7'
 gem 'execjs', '2.5.0'
 
+
 group :production do
-  gem 'pg'
+  gem 'pg', '0.16.0'
 end
 
 group :development, :test do
